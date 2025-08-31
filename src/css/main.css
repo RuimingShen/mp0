@@ -1,1 +1,59 @@
-/* Your CSS here. */
+/* 页面整体居中 */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;   /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  background: white;   /* 灰色背景 */
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* 卡片 */
+.card {
+  background: darkgrey;
+  border: 1px solid #ccc;  /* 灰色方形边框 */
+  padding: 24px;
+  width: 400px;
+  text-align: center;      /* 内容文字居中 */
+}
+
+/* 头像 */
+.avatar {
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 姓名 */
+.name {
+  font-size: 1.6rem;
+  margin: 8px 0;
+  color: white;
+}
+
+
+.email a {
+  color: white;
+  text-decoration: none;
+}
+.plink a {
+  color: purple;
+  text-decoration: none;
+}
+.plink a:hover {
+  text-decoration: underline;
+}
+
+.desc {
+  text-align: left;   /* 左对齐 */
+  color: #fff;        /* 白色字体 */
+  line-height: 1.5;
+}
+
