@@ -20,9 +20,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Upload artifact
+      - name: Upload artifact (publish src/ as site root)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .   # 关键：发布仓库根目录（包含 index.html、src/css/main.css）
+          path: ./src
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
